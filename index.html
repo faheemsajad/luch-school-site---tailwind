@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LunchList</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <div class="bg-gray-900 text-white px-6 py-4">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">LunchList</h1>
+      <nav class="text-sm space-x-4">
+        <a href="#menu" class="hover:underline">Menu</a>
+        <a href="#submit" class="hover:underline">Submit</a>
+        <a href="#feedback" class="hover:underline">Feedback</a>
+        <a href="#about" class="hover:underline">About</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="text-center py-12 px-4">
+    <h2 class="text-3xl font-bold mb-2">This Week's School Lunch</h2>
+    <p class="text-sm text-gray-600">Check what's for lunch this week and suggest your favorites.</p>
+  </div>
+
+  <div id="menu" class="max-w-3xl mx-auto px-4">
+    <h3 class="text-lg font-semibold mb-4">Weekly Menu</h3>
+    <table class="w-full border text-sm text-left">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="px-3 py-2 border">Day</th>
+          <th class="px-3 py-2 border">Main Dish</th>
+          <th class="px-3 py-2 border">Drink</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-3 py-2 border">Monday</td>
+          <td class="px-3 py-2 border">Veg Pulao</td>
+          <td class="px-3 py-2 border">Mango Juice</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-2 border">Tuesday</td>
+          <td class="px-3 py-2 border">Aloo Paratha</td>
+          <td class="px-3 py-2 border">Lassi</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-2 border">Wednesday</td>
+          <td class="px-3 py-2 border">Fried Rice</td>
+          <td class="px-3 py-2 border">Lemonade</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-2 border">Thursday</td>
+          <td class="px-3 py-2 border">Rajma Chawal</td>
+          <td class="px-3 py-2 border">Buttermilk</td>
+        </tr>
+        <tr>
+          <td class="px-3 py-2 border">Friday</td>
+          <td class="px-3 py-2 border">Sandwich</td>
+          <td class="px-3 py-2 border">Orange Juice</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="submit" class="max-w-xl mx-auto mt-16 px-4">
+    <h3 class="text-lg font-semibold mb-3">Submit Your Favorite Dish</h3>
+    <form class="space-y-4 bg-white p-5 rounded shadow">
+      <input type="text" class="w-full border px-3 py-2 rounded text-sm" placeholder="Your Name">
+      <input type="text" class="w-full border px-3 py-2 rounded text-sm" placeholder="Dish Name">
+      <select class="w-full border px-3 py-2 rounded text-sm">
+        <option selected disabled>Select Day</option>
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+      </select>
+      <button class="bg-gray-900 text-white px-4 py-2 text-sm rounded">Submit</button>
+    </form>
+  </div>
+
+  <div id="feedback" class="max-w-xl mx-auto mt-16 px-4">
+    <h3 class="text-lg font-semibold mb-3">Send Feedback</h3>
+    <form class="space-y-4 bg-white p-5 rounded shadow">
+      <input type="text" class="w-full border px-3 py-2 rounded text-sm" placeholder="Your Name">
+      <textarea rows="3" class="w-full border px-3 py-2 rounded text-sm" placeholder="Your Suggestion"></textarea>
+      <button class="bg-gray-800 text-white px-4 py-2 text-sm rounded">Send</button>
+    </form>
+  </div>
+
+  <div id="about" class="max-w-3xl mx-auto mt-20 px-4 text-center">
+    <h3 class="text-lg font-semibold mb-2">About LunchList</h3>
+    <p class="text-sm text-gray-600">LunchList is a school project made to keep track of weekly meals and collect suggestions from students. Built using only HTML and Tailwind CSS.</p>
+  </div>
+
+  <footer class="mt-20 bg-gray-200 text-center py-4 text-xs text-gray-600">
+    © 2025 LunchList • Built by GRUB
+  </footer>
+
+</body>
+</html>
